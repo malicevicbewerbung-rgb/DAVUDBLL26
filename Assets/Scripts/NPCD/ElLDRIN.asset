@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aac634b5af353004ea01fa0e1f5f5322, type: 3}
+  m_Name: ElLDRIN
+  m_EditorClassIdentifier: 
+  npcName: ELDRIN
+  lines: []
+  hasRiddle: 1
+  useLLMRiddle: 1
+  riddleQuestion: "\u201CDie Zeit verwebt sich in den Schatten, doch nur der Klang
+    des Windes kennt ihren Lauf. Was ist das Echo des Vergangenen, wenn die Stille
+    ihn frisst?\u201D"
+  riddleHint: "\u201CDenke \xFCber die Verbindung von Schatten, Zeit und Schall nach.
+    Die Antwort ist ein Instrument, das die Zeit misst und deren Ger\xE4usche reflektiert.\u201D"
+  acceptedAnswers:
+  - "\u201CEine Uhr.\u201D"
+  wrongAnswerResponse: That is not correct. Ponder deeper...
+  correctAnswerResponse: You have answered wisely.
+  keysReward: 1
