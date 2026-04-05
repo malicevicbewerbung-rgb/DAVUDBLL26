@@ -21,26 +21,26 @@ public class BlinkEffect : MonoBehaviour
 
     IEnumerator BlinkSequence()
     {
-        // Start: komplett schwarz
+       
         SetAlpha(1f);
         yield return new WaitForSeconds(startBlackDuration);
 
-        // Augen öffnen sich langsam ein wenig
+
         yield return StartCoroutine(FadeTo(0.35f, firstOpenDuration));
 
-        // Wieder etwas schließen
+
         yield return StartCoroutine(FadeTo(0.85f, blinkCloseDuration));
         yield return new WaitForSeconds(0.15f);
 
-        // Wieder etwas öffnen
+
         yield return StartCoroutine(FadeTo(0.25f, blinkOpenDuration));
         yield return new WaitForSeconds(pauseBetweenBlinks);
 
-        // Noch ein langsames Blinzeln
+
         yield return StartCoroutine(FadeTo(0.75f, 0.3f));
         yield return new WaitForSeconds(0.2f);
 
-        // Dann endgültig Szene langsam einblenden
+         
         yield return StartCoroutine(FadeTo(0f, finalFadeInDuration));
     }
 
